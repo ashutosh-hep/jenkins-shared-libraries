@@ -1,6 +1,6 @@
 def call(accesstoken,username) {
     sh '''
-        sudo docker login --username ${username} --password-stdin ${accesstoken}
+        sudo docker login -u ${username} -p ${accesstoken}
     '''
     echo "Authenctication successful"
 }
