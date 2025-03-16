@@ -1,4 +1,4 @@
 def call(accesstoken,username) {
-    echo ${username}
+    sudo docker login -u username -p accesstoken
     echo "Authenctication successful"
 }
